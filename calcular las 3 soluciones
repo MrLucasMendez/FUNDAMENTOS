@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double a, b, c, d, x, x1, x2, xR, xi;
+    cout<<"Ingrese el valor de a: ";cin>>a;
+    if (a==0){
+    cout<<"la operacion es indeterminada, pruebe otro valor";
+    }
+    if (a!=0){
+    cout<<"Ingrese el valor de b: ";cin>>b;
+    cout<<"Ingrese el valor de c: ";cin>>c;
+    d=b*b-4*a*c;
+    if (d > 0) {
+    x1=(-b + sqrt(d)) / (2 * a);
+    x2=(-b - sqrt(d)) / (2 * a);
+    cout<<"x1= "<<x1<<endl;
+    cout<<"x2= "<<x2<<endl;
+    } else if (d == 0) {
+    x=-b/(2*a);
+    cout<<"La ecuación tiene una única solución real: x = "<<x<<endl;
+    } else if (d<0) {
+    xR= -b/(2*a);
+    xi= sqrt(1-d) /(2*a);
+    cout<< "La solucion imaginaria 1 es "<<xR<< "+"<< xi<<"i"<<endl;
+    cout<< "La solucion imaginaria 2 es "<<xR<< "-"<< xi<<"i"<<endl;
+    }
+    }
+    return 0; 
+}
