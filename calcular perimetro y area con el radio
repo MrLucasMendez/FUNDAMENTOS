@@ -1,0 +1,13 @@
+#include <iostream>
+#include "math.h"
+using namespace std;
+int main()
+{   float perimetro, area, r;
+    const double pi=3.141592;
+    cout<<"Por favor ingrese el radio: ";cin>>r;
+    perimetro=2*pi*r;
+    area=pi*pow(r,2)
+    cout<<"El perimetro del circulo es: "<<perimetro<<endl;
+    cout<<"El area del circulo es: "<<area;
+    return 0;
+}
