@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{   float d, n, pz;
+    pz=150;
+    
+    cout<<"Ingrese el numero de pares de zapatos: ";
+    cin>>n;
+    do{
+    if ((n>0)&&(n<3)){
+        d=pz*0.9;
+        
+    }
+    else if(n>=3){
+        d=pz*0.7;
+    }
+    cout<<"El monto a pagar es: "<<d*n;
+}
+while (n>0)
+    return 0;
+}
+
