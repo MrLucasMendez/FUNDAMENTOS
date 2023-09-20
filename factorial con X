@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i, n, acum = 0, signo= 1, f=1,x;
+    do {
+        cout << "Ingrese el numero de elementos: "; cin >> n;
+    } while (n < 0);
+    do {
+        cou << "ingrese valor de la serie X: "; cin >> x;
+    } while (x < 0);
+    for (i = 1; i <= n; i++) {
+        acum = acum + signo*pow(x,i)/f;
+        f = f * (i+1);
+        signo = -signo;
+    }
+    cout << "La sumatoria es: " << acum;
+    return 0;
